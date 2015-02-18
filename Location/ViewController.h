@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+@interface ViewController : UIViewController <CLLocationManagerDelegate>
 
-@interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *latitudeLabel;
+@property (weak, nonatomic) IBOutlet UITextField *longitudeLabel;
+@property (weak, nonatomic) IBOutlet UITextField *accuracyLabel;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 
 
 @end
